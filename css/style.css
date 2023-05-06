@@ -1,0 +1,95 @@
+body {
+    background: linear-gradient(45deg, dodgerblue, deepskyblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Segoe UI", sans-serif;
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50vw;
+    height: fit-content;
+    background: aliceblue;
+    border-radius: 20px;
+    padding: 0 20px 20px 20px;
+}
+
+.booking-form__line {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.booking-form__line select {
+    width: 100%;
+}
+
+.booking-form__title {
+    width: 100%;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 2rem;
+    user-select: none;
+}
+
+.booking-form__subtitle {
+    width: 100%;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 1.7rem;
+    user-select: none;
+}
+
+.booking-form__flex_centered {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#comment {
+    resize: none;
+    width: 100%;
+}
+
+label {
+    font-size: large;
+}
+
+button {
+    width: 40%;
+    height: 40px;
+    border-radius: 50px;
+    color: ghostwhite;
+    font-family: "Segoe UI Semibold", sans-serif;
+    font-size: medium;
+    background: linear-gradient(0, dodgerblue, lightskyblue);
+    border: aqua;
+    transition: all ease .1s;
+}
+
+button:active {
+    transform: scale(90%);
+}
+
+@media (max-width: 700px) {
+    .booking-form__line {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .booking-form__flex_centered {
+        text-align: center;
+    }
+
+    .booking-form {
+        width: 100vw;
+    }
+}

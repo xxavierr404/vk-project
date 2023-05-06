@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/init-form.js"></script>
+    <script src="js/button-actions.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="booking-form">
+        <h1 class="booking-form__title">Бронирование переговорной</h1>
+        <h2 class="booking-form__subtitle">Выберите переговорную</h2>
+        <div class="booking-form__line">
+            <div>
+                <label for="tower">Башня: </label>
+                <select name="tower" id="tower">
+                    <option value="none" selected>---</option>
+                    <option value="a">A</option>
+                    <option value="b">B</option>
+                </select>
+            </div>
+            <div>
+                <label for="floor">Этаж: </label>
+                <select name="floor" id="floor">
+                    <option value="none" selected>---</option>
+                </select>
+            </div>
+            <div>
+                <label for="room">Номер переговорной: </label>
+                <select name="room" id="room">
+                    <option value="none" selected>---</option>
+                </select>
+            </div>
+        </div>
+        <h2 class="booking-form__subtitle">Ещё немного информации</h2>
+        <div class="booking-form__flex_centered">
+            <div>
+                <label for="datetime">Дата и время бронирования: </label>
+                <input id="datetime" type="datetime-local">
+            </div>
+            <label for="comment">Комментарий:</label>
+            <textarea name="comment" id="comment" cols="60" rows="10"></textarea>
+        </div>
+        <div class="booking-form__line">
+            <button onclick="clearFields()">Очистить</button>
+            <button onclick="send()">Отправить</button>
+        </div>
+    </div>
+</body>
+</html>
